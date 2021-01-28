@@ -9,7 +9,7 @@ export const getSearchResults = async (query: string, limit: number) => {
 
 export const getSongData = async (url: string) => {
   const res = await axios(
-    `https://boiling-citadel-77681.herokuapp.com:32813/download?url=${url}`,
+    `https://boiling-citadel-77681.herokuapp.com/download?url=${url}`,
     {
       responseType: 'arraybuffer',
     }
